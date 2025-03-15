@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holidayly - Tu Viaje Perfecto</title>
+    <style>
+        body {
+            background: url('playa.png') no-repeat center center fixed, url('montana.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            background-color: rgba(0, 0, 50, 0.7);
+            padding: 20px;
+        }
+        .h-elegante {
+            font-family: 'Times New Roman', serif;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .subir-foto {
+            margin: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+        .ranking, .suscripciones, .comunidad {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 50, 0.8);
+            padding: 20px;
+        }
+        .ranking ul, .comunidad ul {
+            list-style: none;
+            padding: 0;
+        }
+        .ranking li, .comunidad li {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .suscripciones button, .comunidad button, .ia-button {
+            padding: 10px;
+            margin: 10px;
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+        }
+        .review {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 50, 0.8);
+            padding: 20px;
+        }
+        .descuento {
+            margin-top: 20px;
+            background-color: yellow;
+            color: black;
+            padding: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="h-elegante">H</span> Holidayly
+    </header>
+    
+    <h1>Bienvenido a Holidayly</h1>
+    <p>Tu planificador de viajes con IA</p>
+    
+    <button class="ia-button" onclick="window.location.href='ArtificialInteligence.html'">Usar IA para planificar</button>
+    
+    <button class="subir-foto" onclick="subirFoto()">Sube tu foto de viaje</button>
+    <div class="descuento" id="descuento">
+        <h2>Descuento 20%</h2>
+        <p>(Canjeable en Hoteles, restaurantes y actividades recomendadas por IA)</p>
+        <p>Código: 0GIEZDSONAGNOPORDOPEIDNOD0</p>
+    </div>
+    
+    <div class="ranking">
+        <h2>Ranking de Viajeros</h2>
+        <ul>
+            <li>1. Javier Fernández</li>
+            <li>2. Laura Martínez</li>
+            <li>3. Alejandro Pérez</li>
+            <li>4. Marta López</li>
+            <li>5. Sergio Ramírez</li>
+        </ul>
+    </div>
+    
+    <div class="suscripciones">
+        <h2>Planes de Suscripción</h2>
+        <p><b>Plan Gratuito:</b> 1 planificación de viaje con anuncios</p>
+        <p><b>Plan Premium:</b> 6€/mes - Sin anuncios y con todas las funciones</p>
+        <p><b>Plan Anual:</b> 60€/año - Descuento especial</p>
+        <button onclick="window.location.href='https://www.youtube.com/channel/UCRI7hheejBbWS6etTNwMT0g'">Conseguir</button>
+    </div>
+    
+    <div class="review">
+        <h2>Opiniones de nuestros usuarios</h2>
+        <p><b>SUSANA HORIA:</b> "Muy recomendado, los mejores precios y actividades"</p>
+        <p><b>KERRY COPITO:</b> "La mejor IA de viajes, recomienda los mejores restaurantes de CalvaLand."</p>
+    </div>
+    
+    <div class="comunidad">
+        <h2>Comunidad</h2>
+        <p>Únete a la discusión sobre viajes y experiencias</p>
+        <button onclick="window.location.href='COMUNIDAD.html'">Acceder</button>
+        <ul>
+            <li><b>12_JOSELU:</b> "Mongolia es increíble, recomiendo la experiencia en yurtas."</li>
+            <li><b>TREBOR33:</b> "Yo estuve en Mongolia en invierno, brutal el paisaje."</li>
+            <li><b>MILENA:</b> "Quiero volver, la comida me sorprendió muchísimo."</li>
+        </ul>
+    </div>
+    
+    <script>
+        function subirFoto() {
+            document.getElementById("descuento").style.display = "block";
+        }
+    </script>
+</body>
+</html>
